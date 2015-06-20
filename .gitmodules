@@ -1,0 +1,12 @@
+[submodule "bundle/exchange"]
+	path = bundle/exchange
+	url = git://github.com/tommcdo/vim-exchange.git
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/undotree"]
+	path = bundle/undotree
+	url = git://github.com/mbbill/undotree.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git

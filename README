@@ -1,2 +1,42 @@
 My vim stuff
 
+just copying the suggestions from here:
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
+Initial setup:
+cd ~/.vim
+mkdir -p bundles
+mkdir -p autoload
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+cp ~/.vimrc ~/.vim/vimrc
+ln -s ~/.vi/vimrc ~/.vimrc
+git init
+
+git submodule add git://github.com/tpope/vim-fugitive.git bundle/fugitive
+
+...etc
+
+ From: http://stackoverflow.com/questions/3240881/git-can-i-suppress-listing-of-modified-content-dirty-submodule-entries-in-sta
+git config core.ignore dirty
+
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/gmmorgan/dotvim.git
+git push -u origin master
+
+To clone:
+cd ~
+git clone http://github.com/gmmorgan/dotvim.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+cd ~/.vim
+git submodule init
+git submodule update
+
+To upgrade an individual module (eg: fugitive):
+cd ~/.vim/bundle/fugitive
+git pull origin master
+
+To upgrade all modules:
+git submodule foreach git pull origin master
+

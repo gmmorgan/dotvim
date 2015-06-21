@@ -70,6 +70,7 @@ set autoindent
 set shiftwidth=3
 set softtabstop=3
 "}}}
+nnoremap <F5> :UndotreeToggle<cr>
 nnoremap <space> za
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>

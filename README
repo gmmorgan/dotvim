@@ -5,7 +5,7 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
 
 Initial setup:
 cd ~/.vim
-mkdir -p bundles
+mkdir -p bundle
 mkdir -p autoload
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 

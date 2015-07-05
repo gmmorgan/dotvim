@@ -30,7 +30,7 @@ let g:pydiction_location="/home/gmm/python/pydiction-1.2/complete-dict"
 nmap <c-s> :w<CR>
 imap <c-s> :w<CR>a
 augroup python "-----------------------{{{
-    autocmd BufNewFile,BufRead *.py compiler python
+"    autocmd BufNewFile,BufRead *.py compiler python
     autocmd FileType python :iabbrev <buffer> iff if:<left>
 augroup END "}}}
 augroup java "-----------------------{{{
